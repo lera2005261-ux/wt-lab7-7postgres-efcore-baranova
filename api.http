@@ -1,0 +1,26 @@
+### Для VS Code REST Client. Для Render замените адрес.
+@host = http://localhost:10000
+
+GET {{host}}/
+###
+GET {{host}}/api/info
+###
+GET {{host}}/api/products
+###
+GET {{host}}/api/products?search=ноут
+###
+GET {{host}}/api/products/1
+###
+GET {{host}}/api/products/999
+###
+POST {{host}}/api/products
+Content-Type: application/json
+
+{ "name": "Планшет", "category": "Компьютеры", "price": 1200, "isAvailable": true }
+###
+PUT {{host}}/api/products/1
+Content-Type: application/json
+
+{ "name": "Ноутбук Pro", "category": "Компьютеры", "price": 2700, "isAvailable": true }
+###
+DELETE {{host}}/api/products/1

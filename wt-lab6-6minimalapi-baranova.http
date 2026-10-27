@@ -1,0 +1,6 @@
+@wt_lab6_6minimalapi_baranova_HostAddress = http://localhost:5097
+
+GET {{wt_lab6_6minimalapi_baranova_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
