@@ -168,3 +168,4 @@ app.MapDelete("/api/products/{id:int}", async (int id, AppDbContext db) =>
 // ---- Запуск: порт из переменной окружения PORT (Render) ----
 var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
 app.Run($"http://0.0.0.0:{port}");
+//rjvvbn
