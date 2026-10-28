@@ -37,6 +37,10 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<bool>("IsAvailable")
                         .HasColumnType("boolean");
 
@@ -57,6 +61,7 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                             Id = 1,
                             Category = "Компьютеры",
                             CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "",
                             IsAvailable = true,
                             Name = "Ноутбук",
                             Price = 2500m
@@ -66,6 +71,7 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                             Id = 2,
                             Category = "Аксессуары",
                             CreatedAt = new DateTime(2026, 1, 2, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "",
                             IsAvailable = true,
                             Name = "Мышь",
                             Price = 80m
@@ -75,6 +81,7 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                             Id = 3,
                             Category = "Аксессуары",
                             CreatedAt = new DateTime(2026, 1, 3, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "",
                             IsAvailable = false,
                             Name = "Клавиатура",
                             Price = 150m
@@ -84,6 +91,7 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                             Id = 4,
                             Category = "Компьютеры",
                             CreatedAt = new DateTime(2026, 1, 4, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "",
                             IsAvailable = true,
                             Name = "Монитор",
                             Price = 900m
@@ -93,6 +101,7 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                             Id = 5,
                             Category = "Аудио",
                             CreatedAt = new DateTime(2026, 1, 5, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "",
                             IsAvailable = true,
                             Name = "Наушники",
                             Price = 320m
@@ -102,6 +111,7 @@ namespace wt_lab7_7postgres_efcore_baranova.Migrations
                             Id = 6,
                             Category = "Телефоны",
                             CreatedAt = new DateTime(2026, 1, 6, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Description = "",
                             IsAvailable = true,
                             Name = "Смартфон",
                             Price = 1800m

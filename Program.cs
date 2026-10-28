@@ -144,7 +144,7 @@ app.MapPut("/api/products/{id:int}", async (int id, Product updatedProduct, AppD
     product.Category = updatedProduct.Category;
     product.Price = updatedProduct.Price;
     product.IsAvailable = updatedProduct.IsAvailable;
-    // после шага 35 добавьте: product.Description = updatedProduct.Description;
+    product.Description = updatedProduct.Description;
 
     await db.SaveChangesAsync();
     return Results.Ok(product);
