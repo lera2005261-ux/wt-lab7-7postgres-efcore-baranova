@@ -7,5 +7,5 @@ public class Product
     public string Category { get; set; } = "";
     public decimal Price { get; set; }
     public bool IsAvailable { get; set; } = true;
-    // public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; }
 }

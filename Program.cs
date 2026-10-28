@@ -121,7 +121,7 @@ app.MapPost("/api/products", async (Product product, AppDbContext db) =>
         return Results.BadRequest(new { errors });
 
     product.Id = 0;                        // Id создаёт БД
-                                           // product.CreatedAt = DateTime.UtcNow; // раскомментировать на шаге AddCreatedAt
+    product.CreatedAt = DateTime.UtcNow; // раскомментировать на шаге AddCreatedAt
     db.Products.Add(product);
     await db.SaveChangesAsync();
 
