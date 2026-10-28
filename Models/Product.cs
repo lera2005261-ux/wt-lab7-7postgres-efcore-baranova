@@ -1,3 +1,5 @@
+namespace wt_lab7_7postgres_efcore_baranova.Models;
+
 public class Product
 {
     public int Id { get; set; }
